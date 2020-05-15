@@ -1,0 +1,119 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Crimson+Text:400,600,700|Inconsolata:400,700|Liu+Jian+Mao+Cao&display=swap');
+/* Variable */
+:root{
+    --primary-color: #4458dc;
+    --primary-color2: #854fee;
+    --title-color: #ffffff;
+    --text-color: #111111;  
+    --border-color: #201f1f17;  
+    --gradient-color: linear-gradient(90deg, #4458dc 0%, #854fee 100%);
+    --shadow-color:  0px 10px 30px rgba(118, 85, 225, 0.3);
+    --box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+    /* for nav */
+    --nav-font: 'Inconsolata', monospace;
+    /* title */
+    --title-font: 'Crimson Text', serif;
+   
+}
+/* Global CSS */
+html,body{
+    scroll-behavior: smooth;
+}
+
+header, footer{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+section{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+h1 ,h2 ,h3, h4,h5,h6{
+    font-family: var(--title-font);
+}
+p{
+    font-family: var(--title-font);
+}
+
+
+/* main css */
+
+header{
+    background: var(--gradient-color);
+}
+header .navbar .nav-item .nav-link{
+    color: var(--title-color);
+    font-family: var(--nav-font);
+    padding-right: 4rem;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+
+}
+
+main .about .profile{
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 1.5rem;
+    box-shadow: var(--box-shadow);
+}
+main .about .jumbotron{
+    background-color: var(--title-color) !important;
+    border: 2px solid var(--border-color);
+    border-radius: 0.2rem;
+}
+main .about .jumbotron .display-4{
+    color: var(--primary-color);
+}
+
+main .project{
+    background-color: var(--border-color);
+}
+main .project .card .card-img-top{
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 2rem;
+    border-radius: 0.3rem;
+}
+main .project .card .card-body .card-title{
+    color: var(--primary-color2);
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+}
+main .project .card:hover{
+    background: var(--gradient-color);
+}
+main .project .card:hover .card-title{
+    color: var(--title-color);
+}
+.modal-footer button{
+    background-color: var(--primary-color2);
+    color: var(--title-color);
+}
+main .activities .card{
+    box-shadow: var(--box-shadow);
+    border: 1px solid var(--border-color);
+}
+main .activities .card .card-img-top{
+    height: 12rem;
+}
+main .activities .card .card-body .card-title{
+    color: var(--primary-color);
+}
+
+footer{
+    background-color: var(--border-color)
+}
+footer h4{
+    text-decoration: underline;
+}
+footer .social{
+    padding-top: 9rem;
+}
